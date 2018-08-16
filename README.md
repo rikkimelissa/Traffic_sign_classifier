@@ -15,33 +15,22 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+### Pipeline description
 
-### 1. Pipeline description
+My pipeline consisted of 5 steps.
+#### 1. Convert the image to grayscale.
+#### 2. Apply Gaussian smoothing.
+#### 3. Detect edges with Canny edge detection
+#### 4. Choose a quadrilateral region of interest and apply a mask
+#### 5. Detect lines with a Hough transform. I used a high threshold, low minimum line length, and high line gap to isolate lane lines.
 
-My pipeline consisted of XX steps.
-#### 1. 
+In order to draw a single line, I separated the lines given by the Hough transform by slope. Anything with a slope outside of a defined region was thrown out. The remaining lines were used to calculate an average slope and y-intercept for each side. I used these averages to define a line in the region of interest.
 
+### Potential shortcomings
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+This detection does not work well on curves, because the Hough transform uses a high threshold of intersections for something to count as a line, and a curve is not a line!
+This detection also doesn't work well with shadows, and it probably also would not work well in bad lighting conditions or bad weather. It would also likely get confused if the road was banked or if there was a high gradient.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+### Possible improvements
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
-
-### 2. Identify potential shortcomings with your current pipeline
-
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
-
-### 3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+This pipeline would be more robust if curves were considered in addition to lines. It could also be improved by comparing output between frames, instead of treating each frame as an individual image to analyze. I could be more confident in a line prediction if it was similar to the line detected in the previous image.
