@@ -20,9 +20,9 @@ The goals / steps of this project are the following:
 [image1]: ./bar.png "Bar Graph"
 [image2]: ./30kph.jpg "Traffic Sign 1"
 [image3]: ./doublecurve.jpg "Traffic Sign 2"
-[image4]: ./nopassing.png "Traffic Sign 3"
-[image5]: ./slippery.png "Traffic Sign 4"
-[image6]: ./stop.png "Traffic Sign 5"
+[image4]: ./nopassing.jpg "Traffic Sign 3"
+[image5]: ./slippery.jpg "Traffic Sign 4"
+[image6]: ./stop.jpg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -77,7 +77,7 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Fully connected		| outputs 84 vector 							|
 | RELU					|												|
-| Droot					|Probability .5									|
+| Dropout					|Probability .5									|
 | Fully connected		| outputs 43 classes 							|
 
 
