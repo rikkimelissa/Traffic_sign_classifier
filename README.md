@@ -17,12 +17,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./../bar.png "Bar Graph"
-[image2]: ./../30kph.jpg "Traffic Sign 1"
-[image3]: ./../doublecurve.jpg "Traffic Sign 2"
-[image4]: ./../nopassing.png "Traffic Sign 3"
-[image5]: ./../slippery.png "Traffic Sign 4"
-[image6]: ./../stop.png "Traffic Sign 5"
+[image1]: ./bar.png "Bar Graph"
+[image2]: ./30kph.jpg "Traffic Sign 1"
+[image3]: ./doublecurve.jpg "Traffic Sign 2"
+[image4]: ./nopassing.png "Traffic Sign 3"
+[image5]: ./slippery.png "Traffic Sign 4"
+[image6]: ./stop.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -32,7 +32,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! The code for my project is in the Udacity workspace as Traffic_Sign_Classifier and as an html with the same name.
+You're reading it! The code for my project is in the Udacity workspace as Traffic\_Sign_Classifier and as an html with the same name.
 
 ### Data Set Summary & Exploration
 
